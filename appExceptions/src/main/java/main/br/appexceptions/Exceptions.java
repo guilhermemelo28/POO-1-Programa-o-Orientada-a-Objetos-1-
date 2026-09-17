@@ -60,14 +60,13 @@ public class Exceptions {
         
     }
     
-    
     public void lerarquivoTXT(){
             BufferedReader reader = null;
         try {
             String file = "fileTest.txt";
             reader = new BufferedReader (new FileReader (file));
             String currentLine = reader.readLine();
-            System.out.println("Dados"+currentLine);
+            System.out.println("Dados:"+currentLine);
                     
         } catch (FileNotFoundException ex) {
             System.out.println("Arquivo nao encontrado");
